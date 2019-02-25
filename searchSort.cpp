@@ -133,10 +133,19 @@ void SearchSort::sorting() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     the algorithm implemented for sorting is the
+ *                  bubble sort method. This method compares two
+ *                  values in the array and swaps the smallest one
+ *                  to the left. It continues to do this until all
+ *                  the values are sorted. This algorithm is similar
+ *                  to the one in the textbook on page 613.
 *********************************************************************/
 void SearchSort::bubbleSort(int arr[], int size) {
+    int temp;
+    bool swapMade;
+    do {
 
+    } while ();
 }
 
 /*********************************************************************
