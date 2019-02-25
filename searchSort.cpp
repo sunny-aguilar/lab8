@@ -212,7 +212,9 @@ void SearchSort::binarySearchOps() {
 
     // open sorted files from task 3
     int *tempAray;
+    int element;
     int count = 0;
+    int index = 0;
     string fileName;
     ifstream inFile;
 
@@ -229,13 +231,21 @@ void SearchSort::binarySearchOps() {
     } while (inFile.fail());                    // if file not found, repeat loop
 
     // confirm input file opened
-    cout << "Building file successfully opened\n";
+    cout << "Text file successfully opened\n";
 
     // count elements in file
     while (!inFile.eof()) {
+        inFile >> element;
         count++;
+        cout << "Counting\n";
     }
     cout << "Element count " << count << endl;
+    tempAray = new int[count];
+    while (!inFile.eof()) {
+        inFile >> tempAray[index];
+        index++;
+    }
+
 
 
     // search for value in each array and return if found
