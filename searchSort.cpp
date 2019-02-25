@@ -108,7 +108,7 @@ void SearchSort::loadArrays() {
         index++;
     }
     for (int i = 0; i < 10; i++) {
-        cout << thirdArray[i] << " ";
+        cout << fourthArray[i] << " ";
     }
     cout << endl;
 
