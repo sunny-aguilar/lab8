@@ -138,6 +138,7 @@ void SearchSort::openFile(string fileName, int arr[], int size) {
     while (!inFile.eof()) {
         inFile >> val;
         arr[index] = val;
+        index++;
     }
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
