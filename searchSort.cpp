@@ -143,8 +143,20 @@ void SearchSort::sorting() {
     // create outfile and write
     outFile.open(outFileName);
 
+    int *tempArr = nullptr;
+    copyArray(firstArray, 9, tempArr);
+}
 
+void SearchSort::copyArray(int arr[], int size, int *tempArr) {
+    tempArr = new int[size];
 
+    for (int index = 0; index < size; index++) {
+        tempArr[index] = arr[index];
+    }
+
+    for (int index = 0; index < size; index++) {
+        cout << tempArr[index] << " ";
+    }
 }
 
 /*********************************************************************
