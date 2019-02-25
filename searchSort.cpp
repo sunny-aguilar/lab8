@@ -142,14 +142,24 @@ void SearchSort::sorting() {
 
         // create outfile and write
         outFile.open(outFileName);
-        bubbleSort(firstArray, 9);
-        for (int index = 0; index < 9; index++) {
-            cout << firstArray[index] << " ";
+
+        if (i == 0) {
+            bubbleSort(firstArray, 9);
+            insertFile(outFile, firstArray, 9);
+        }
+        else if (i == 1) {
+            bubbleSort(secondArray, 10);
+            insertFile(outFile, secondArray, 10);
+        }
+        else if (i == 2) {
+            bubbleSort(thirdArray, 10);
+            insertFile(outFile, thirdArray, 10);
+        }
+        else if (i == 3) {
+            bubbleSort(fourthArray, 10);
+            insertFile(outFile, fourthArray, 10);
         }
 
-        int max = 9;
-        if (i <= 1) { max = 10; }
-        insertFile(outFile, firstArray, max);
     }
 }
 
