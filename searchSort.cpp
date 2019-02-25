@@ -149,13 +149,19 @@ void SearchSort::sorting() {
 
         int max = 9;
         if (i <= 1) { max = 10; }
-
-        for (int index = 0; index < 9; index++) {
-            outFile << firstArray[index] << " ";
-        }
+        insertFile(outFile, firstArray, max);
     }
-
 }
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void SearchSort::insertFile(ofstream &file, int arr[], int size) {
+    for (int index = 0; index < size; index++) {
+        file << arr[index] << " ";
+    }
+}
+
 
 /*********************************************************************
 ** Description:     the algorithm implemented for sorting is the
