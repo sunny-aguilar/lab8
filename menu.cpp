@@ -28,7 +28,10 @@ void Menu::menuCreateArrays() {
 
 
 
-
+void Menu::menuExit() {
+    cout << "\n Now exiting the program, goodbye.\n";
+    cout << "+--------------------------------------------------+\n";
+}
 
 
 /*********************************************************************

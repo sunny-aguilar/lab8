@@ -25,8 +25,8 @@ class Menu {
 public:
     void mainMenu();
     void menuCreateArrays();
+    void menuExit();
     int validateNumber(int min, int max);
-
 
 private:
 

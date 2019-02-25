@@ -27,6 +27,7 @@ void SearchSort::startProgram() {
     menu.menuCreateArrays();
 
     // load arrays
+    loadArrays();
 
     // main menu and select algorithm
     selectAlgorithm();
@@ -57,6 +58,7 @@ void SearchSort::selectAlgorithm() {
         case 3:
             break;
         case 4:
+            menu.menuExit();
             break;
         default:
             cout << "Unable to determine selection\n";
