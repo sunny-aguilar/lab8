@@ -129,7 +129,17 @@ bool SearchSort::simpleSearch(int arr[], int size, int val) {
 ** Description:     desc
 *********************************************************************/
 void SearchSort::sorting() {
+    string outFileName;
 
+    ofstream outFile;
+
+    // request output file name;
+    cout << "Enter a file name to save the data to (i.e., outfile_one.txt):\n";
+    cout << ">> ";
+    cin >> outFileName;
+
+    // create outfile and write
+    outFile.open(outFileName);
 }
 
 /*********************************************************************
