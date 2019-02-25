@@ -26,7 +26,6 @@ public:
     void searchArrays();
     bool simpleSearch(int arr[], int size, int val);
     void sorting();
-    void copyArray(int arr[], int size, int *tempArr);
     void bubbleSort(int arr[], int size);
     void binarySearch();
 
