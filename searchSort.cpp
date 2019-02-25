@@ -40,6 +40,11 @@ void SearchSort::startProgram() {
 **                  data into the arrays
 *********************************************************************/
 void SearchSort::loadArrays() {
+    openFile("original.txt", firstArray, 9);
+    openFile("early.txt", firstArray, 9);
+    openFile("original.txt", firstArray, 9);
+    openFile("original.txt", firstArray, 9);
+
     // get and copy first file data into array
     ifstream infile_original;
     infile_original.open("original.txt");
@@ -115,18 +120,29 @@ void SearchSort::loadArrays() {
         cout << fourthArray[i] << " ";
     }
     cout << endl;
-
 }
 
 /*********************************************************************
 ** Description:     opens the file based on the parameters it receives
 **                  and copies data into the arrays
 *********************************************************************/
-void SearchSort::openFile(string fileName) {
+void SearchSort::openFile(string fileName, int arr[], int size) {
     int val;
     int index = 0;
 
-    
+    ifstream inFile;
+    inFile.open(fileName);
+    if (inFile.fail()) {
+        cout << "WARNING! Cannot find file \"" << fileName << "\"\n\n";
+    }
+    while (!inFile.eof()) {
+        inFile >> val;
+        arr[index] = val;
+    }
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
 
 /*********************************************************************
