@@ -48,9 +48,37 @@ void SearchSort::loadArrays() {
         cout << "WARNING! Cannot find file \"original.txt\"\n\n";
     }
 
+    int val;
+    int index = 0;
     while (!infile_original.eof()) {
-
+        infile_original >> val;
+        firstArray[index] = val;
+        index++;
     }
+    for (int i = 0; i < 9; i++) {
+        cout << firstArray[i] << " ";
+    }
+    cout << endl;
+
+    // reset index
+    index = 0;
+
+    ifstream infile_early;
+    infile_early.open("early.txt");
+    if (infile_early.fail()) {
+        cout << "WARNING! Cannot find file \"early.txt\"\n\n";
+    }
+    while (!infile_early.eof()) {
+        infile_early >> val;
+        secondArray[index] = val;
+        index++;
+    }
+    for (int i = 0; i < 9; i++) {
+        cout << secondArray[i] << " ";
+    }
+    cout << endl;
+
+
 
 }
 
