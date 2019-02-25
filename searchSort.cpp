@@ -40,9 +40,7 @@ void SearchSort::startProgram() {
 **                  data into the arrays
 *********************************************************************/
 void SearchSort::loadArrays() {
-    string fileName;
     ifstream infile_original;
-
     infile_original.open("original.txt");
     if (infile_original.fail()) {
         cout << "WARNING! Cannot find file \"original.txt\"\n\n";
@@ -78,7 +76,11 @@ void SearchSort::loadArrays() {
     }
     cout << endl;
 
-
+    ifstream infile_middle;
+    infile_middle.open("middle.txt");
+    if (infile_middle.fail()) {
+        cout << "WARNING! Cannot find file \"middle.txt\"\n\n";
+    }
 
 }
 
