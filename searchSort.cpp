@@ -126,7 +126,8 @@ bool SearchSort::simpleSearch(int arr[], int size, int val) {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     this function calls another function for each
+**                  array to be sorted
 *********************************************************************/
 void SearchSort::sortOperations() {
     outputSortedFile(firstArray, 9);
@@ -135,6 +136,9 @@ void SearchSort::sortOperations() {
     outputSortedFile(fourthArray, 10);
 }
 
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
 void SearchSort::outputSortedFile(int arr[], int size) {
     // string to hold output file name
     string outFileName;
@@ -150,14 +154,17 @@ void SearchSort::outputSortedFile(int arr[], int size) {
     // create outfile and write
     outFile.open(outFileName);
 
+    // sort array
     bubbleSort(arr, size);
+
+    // insert sorted values into file
     insertFile(outFile, arr, size);
 }
 
 
 
 /*********************************************************************
-** Description:     desc
+** Description:     inserts the array values into the output file
 *********************************************************************/
 void SearchSort::insertFile(ofstream &file, int arr[], int size) {
     for (int index = 0; index < size; index++) {
