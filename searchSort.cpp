@@ -211,6 +211,8 @@ void SearchSort::binarySearchOps() {
     int val = menu.validateNumber(0,50);
 
     // open sorted files from task 3
+    int *tempAray;
+    int count = 0;
     string fileName;
     ifstream inFile;
 
@@ -229,8 +231,12 @@ void SearchSort::binarySearchOps() {
     // confirm input file opened
     cout << "Building file successfully opened\n";
 
+    // count elements in file
+    while (!inFile.eof()) {
+        count++;
+    }
+    cout << "Element count " << count << endl;
 
-    
 
     // search for value in each array and return if found
     bool firstResult = binarySearch(firstArray, 9, val);
