@@ -212,9 +212,9 @@ void SearchSort::binarySearchOps() {
 
     // search for value in each array and return if found
     bool firstResult = binarySearch(firstArray, 9, val);
-    bool firstResult = binarySearch(secondArray, 10, val);
-    bool firstResult = binarySearch(thirdArray, 10, val);
-    bool firstResult = binarySearch(fourthArray, 10, val);
+    bool secondResult = binarySearch(secondArray, 10, val);
+    bool thirdResult = binarySearch(thirdArray, 10, val);
+    bool fourthResult = binarySearch(fourthArray, 10, val);
 }
 
 /*********************************************************************
