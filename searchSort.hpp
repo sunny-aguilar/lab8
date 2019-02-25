@@ -23,12 +23,14 @@ public:
     void loadArrays();
     void openFile(string fileName, int arr[], int size);
     void selectAlgorithm();
-    void simpleSearch();
+    void getTargetValue();
+    void simpleSearch(int arr[], int val);
     void sorting();
     void binarySearch();
 
 private:
     Menu menu;
+    int target;
     int firstArray[9];
     int secondArray[10];
     int thirdArray[10];

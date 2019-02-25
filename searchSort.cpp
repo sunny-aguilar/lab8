@@ -12,7 +12,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-SearchSort::SearchSort() {}
+SearchSort::SearchSort() :target{0} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -74,7 +74,8 @@ void SearchSort::selectAlgorithm() {
     menu.mainMenu();
     switch (menu.validateNumber(1,4)) {
         case 1:
-            simpleSearch();
+            getTargetValue();
+            simpleSearch(firstArray, 9);
             break;
         case 2:
             sorting();
@@ -93,10 +94,17 @@ void SearchSort::selectAlgorithm() {
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
-void SearchSort::simpleSearch() {
+void SearchSort::getTargetValue() {
     menu.menuSearchValue();
     int val = menu.validateNumber(0,50);
-    cout << "Value entered is " << val << endl;
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void SearchSort::simpleSearch(int arr[], int val) {
+
+
     // binary search algorithm
 
 }
