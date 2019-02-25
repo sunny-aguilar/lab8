@@ -28,9 +28,8 @@ void SearchSort::startProgram() {
 
     // load arrays
 
-    // display main menu
-    menu.mainMenu();
-
+    // main menu and select algorithm
+    selectAlgorithm();
 
 }
 
@@ -48,6 +47,8 @@ void SearchSort::loadArrays() {
 **                  data into the arrays
 *********************************************************************/
 void SearchSort::selectAlgorithm() {
+    // display main menu
+    menu.mainMenu();
     switch (menu.validateNumber(1,4)) {
         case 1:
             break;
