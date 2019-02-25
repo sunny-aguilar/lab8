@@ -9,3 +9,9 @@
 
 #include <iostream>
 
+/*********************************************************************
+** Description:     starts the program
+*********************************************************************/
+void SearchSort::startProgram() {
+    menu.menuCreateArrays();
+}

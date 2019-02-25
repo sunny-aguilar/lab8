@@ -24,6 +24,7 @@ using std::endl;
 class Menu {
 public:
     void mainMenu();
+    void menuCreateArrays();
     int validateNumber(int min, int max);
 
 

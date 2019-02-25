@@ -8,8 +8,14 @@
 *********************************************************************/
 #include "menu.hpp"
 
-
-
+/*********************************************************************
+** Description:     alerts user that the data files are being copied
+**                  into the arrays
+*********************************************************************/
+void Menu::menuCreateArrays() {
+    cout << "\n Stand By - Transferring data into arrays\n";
+    cout << "+--------------------------------------------------+\n";
+}
 
 /*********************************************************************
 ** Description:     general validator where the parameters are the

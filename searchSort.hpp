@@ -13,8 +13,9 @@
 class SearchSort {
 public:
     void startProgram();
-private:
 
+private:
+    Menu menu;
 };
 
 #endif //LAB8_SEARCHSORT_HPP
