@@ -211,7 +211,25 @@ void SearchSort::binarySearchOps() {
     int val = menu.validateNumber(0,50);
 
     // open sorted files from task 3
-    ifstream inputFile;
+    string fileName;
+    ifstream inFile;
+
+    // add a file name
+    cout << "Enter a file name (i.e. a.txt)\n";
+
+    // loop - ask user for file name if incorrect
+    do {
+        cin >> fileName;                        // building_list.txt
+        inFile.open(fileName);                  // input file data from building_list.txt
+        if (inFile.fail())
+            cout << "File not found! "          // request file name if not found
+                 << "Enter a file name:\n";
+    } while (inFile.fail());                    // if file not found, repeat loop
+
+    // confirm input file opened
+    cout << "Building file successfully opened\n";
+
+
     
 
     // search for value in each array and return if found
