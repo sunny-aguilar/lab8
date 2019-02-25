@@ -75,7 +75,6 @@ void SearchSort::selectAlgorithm() {
     switch (menu.validateNumber(1,4)) {
         case 1:
             searchArrays();
-            int value = simpleSearch(firstArray, 9, target);
             break;
         case 2:
             sorting();

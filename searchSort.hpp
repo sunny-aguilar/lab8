@@ -30,7 +30,6 @@ public:
 
 private:
     Menu menu;
-    int target;
     int firstArray[9];
     int secondArray[10];
     int thirdArray[10];
