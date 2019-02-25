@@ -41,9 +41,9 @@ void SearchSort::startProgram() {
 *********************************************************************/
 void SearchSort::loadArrays() {
     openFile("original.txt", firstArray, 9);
-    openFile("early.txt", firstArray, 9);
-    openFile("middle.txt", firstArray, 9);
-    openFile("end.txt", firstArray, 9);
+    openFile("early.txt", firstArray, 10);
+    openFile("middle.txt", firstArray, 10);
+    openFile("end.txt", firstArray, 10);
 
     // get and copy first file data into array
     ifstream infile_original;
