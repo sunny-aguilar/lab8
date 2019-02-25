@@ -24,4 +24,16 @@ SearchSort::~SearchSort() {}
 *********************************************************************/
 void SearchSort::startProgram() {
     menu.menuCreateArrays();
+
+
+
+}
+
+
+/*********************************************************************
+** Description:     this functions gets the text files and adds the
+**                  data into the arrays
+*********************************************************************/
+void SearchSort::loadArrays() {
+
 }

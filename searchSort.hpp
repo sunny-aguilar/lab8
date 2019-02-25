@@ -15,6 +15,7 @@ public:
     SearchSort();
     ~SearchSort();
     void startProgram();
+    void loadArrays();
 
 private:
     Menu menu;
