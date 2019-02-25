@@ -9,6 +9,9 @@
 #define SEARCHSORT_HPP
 
 #include "menu.hpp"
+#include <fstream>
+using std::ifstream;
+using std
 
 class SearchSort {
 public:
