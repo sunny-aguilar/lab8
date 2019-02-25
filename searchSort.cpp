@@ -215,5 +215,24 @@ void SearchSort::binarySearchOps() {
 **                  the one found in the textbook on page 606.
 *********************************************************************/
 void SearchSort::binarySearch(int arr[], int size, int val) {
+    int first = 0;
+    int last = size - 1;
+    int middle;
+    int position = -1;
+    bool found = false;
+
+    while (!found && first <= last) {
+        middle = (first + last) / 2;
+        if (arr[middle] == val) {
+            found = true;
+            position = middle;
+        }
+        else if (arr[middle] > val) {
+            last = middle - 1;
+        }
+        else {
+            first = middle + 1;
+        }
+    }
 
 }
