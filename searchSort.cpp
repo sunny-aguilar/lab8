@@ -164,8 +164,6 @@ void SearchSort::outputSortedFile(int arr[], int size) {
     insertFile(outFile, arr, size);
 }
 
-
-
 /*********************************************************************
 ** Description:     inserts the array values into the output file
 *********************************************************************/
