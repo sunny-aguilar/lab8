@@ -73,7 +73,7 @@ void SearchSort::loadArrays() {
         secondArray[index] = val;
         index++;
     }
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < 10; i++) {
         cout << secondArray[i] << " ";
     }
     cout << endl;
