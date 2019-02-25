@@ -206,7 +206,7 @@ void SearchSort::bubbleSort(int arr[], int size) {
 ** Description:     starts the program
 *********************************************************************/
 void SearchSort::binarySearchOps() {
-
+    binarySearch(firstArray, 9, )
 }
 
 /*********************************************************************
@@ -221,7 +221,7 @@ bool SearchSort::binarySearch(int arr[], int size, int val) {
     bool found = false;
 
     while (!found && first <= last) {
-        middle = (first + last) / 2;
+        middle = ((unsigned)first + (unsigned)last) >> 1;
         if (arr[middle] == val) {
             found = true;
         }
