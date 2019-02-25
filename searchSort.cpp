@@ -45,7 +45,11 @@ void SearchSort::loadArrays() {
 
     infile_original.open("original.txt");
     if (infile_original.fail()) {
-        cout << "Cannot find \"original.txt\"";
+        cout << "WARNING! Cannot find file \"original.txt\"\n\n";
+    }
+
+    while (!infile_original.eof()) {
+
     }
 
 }
