@@ -92,11 +92,11 @@ void SearchSort::selectAlgorithm() {
 
 /*********************************************************************
 ** Description:     this function prompts a user to enter a value to
- *                  search in each array. The value is passed to all
- *                  four functions and a bool value is returned to
- *                  indicate whether the value was found. The last
- *                  function called displays the results of the value
- *                  found.
+**                  search in each array. The value is passed to all
+**                  four functions and a bool value is returned to
+**                  indicate whether the value was found. The last
+**                  function called displays the results of the value
+**                  found.
 *********************************************************************/
 void SearchSort::searchArrays() {
     // prompt user for search value
