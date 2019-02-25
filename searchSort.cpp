@@ -129,12 +129,14 @@ bool SearchSort::simpleSearch(int arr[], int size, int val) {
 ** Description:     desc
 *********************************************************************/
 void SearchSort::sorting() {
-    // string to hold output file name
-    string outFileName;
 
-    // create output file object
-    ofstream outFile;
     for (int i = 0; i < 4; i++) {
+        // string to hold output file name
+        string outFileName;
+
+        // create output file object
+        ofstream outFile;
+
         // request output file name;
         cout << "Enter a file name to save the data to (i.e., outfile_one.txt):\n";
         cout << ">> ";
@@ -159,7 +161,6 @@ void SearchSort::sorting() {
             bubbleSort(fourthArray, 10);
             insertFile(outFile, fourthArray, 10);
         }
-
     }
 }
 
@@ -170,8 +171,12 @@ void SearchSort::insertFile(ofstream &file, int arr[], int size) {
     for (int index = 0; index < size; index++) {
         file << arr[index] << " ";
     }
-}
 
+    for (int index = 0; index < size; index++) {
+        cout << arr[index] << " ";
+    }
+    cout << endl;
+}
 
 /*********************************************************************
 ** Description:     the algorithm implemented for sorting is the
