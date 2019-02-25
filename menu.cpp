@@ -41,18 +41,18 @@ void Menu::menuSearchValue() {
 void Menu::menuSearchResults(bool arr1, bool arr2, bool arr3, bool arr4) {
     cout << "\n Linear Search Results\n";
     cout << "+--------------------------------------------------+\n";
-    cout << "First Array: ";
-    if (arr1) { cout << "Value found\n"; }
-    else { cout << "Value not found\n"; }
+    cout << "num.txt: ";
+    if (arr1) { cout << "target value found\n"; }
+    else { cout << "target value not found\n"; }
     cout << "Second Array: ";
-    if (arr2) { cout << "Value found\n"; }
-    else { cout << "Value not found\n"; }
+    if (arr2) { cout << "target value found\n"; }
+    else { cout << "target value not found\n"; }
     cout << "Third Array: ";
-    if (arr3) { cout << "Value found\n"; }
-    else { cout << "Value not found\n"; }
+    if (arr3) { cout << "target value found\n"; }
+    else { cout << "target value not found\n"; }
     cout << "Fourth Array: ";
-    if (arr4) { cout << "Value found\n"; }
-    else { cout << "Value not found\n"; }
+    if (arr4) { cout << "target value found\n"; }
+    else { cout << "target value not found\n"; }
 }
 
 /*********************************************************************
