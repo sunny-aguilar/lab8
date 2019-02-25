@@ -210,6 +210,10 @@ void SearchSort::binarySearchOps() {
     menu.menuSearchValue();
     int val = menu.validateNumber(0,50);
 
+    // open sorted files from task 3
+    ifstream inputFile;
+    
+
     // search for value in each array and return if found
     bool firstResult = binarySearch(firstArray, 9, val);
     bool secondResult = binarySearch(secondArray, 10, val);
