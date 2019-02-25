@@ -245,7 +245,10 @@ void SearchSort::binarySearchOps() {
         inFile >> tempAray[index];
         index++;
     }
-
+    for (int i = 0; i < count; i++) {
+        cout << tempAray[i] << " ";
+    }
+    cout << endl;
 
 
     // search for value in each array and return if found
