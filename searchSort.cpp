@@ -214,18 +214,16 @@ void SearchSort::binarySearchOps() {
 **                  algorithm to search each array. It is similar to
 **                  the one found in the textbook on page 606.
 *********************************************************************/
-void SearchSort::binarySearch(int arr[], int size, int val) {
+bool SearchSort::binarySearch(int arr[], int size, int val) {
     int first = 0;
     int last = size - 1;
     int middle;
-    int position = -1;
     bool found = false;
 
     while (!found && first <= last) {
         middle = (first + last) / 2;
         if (arr[middle] == val) {
             found = true;
-            position = middle;
         }
         else if (arr[middle] > val) {
             last = middle - 1;
@@ -234,5 +232,5 @@ void SearchSort::binarySearch(int arr[], int size, int val) {
             first = middle + 1;
         }
     }
-
+    return found;
 }
