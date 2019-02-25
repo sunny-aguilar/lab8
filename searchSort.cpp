@@ -40,6 +40,7 @@ void SearchSort::startProgram() {
 **                  data into the arrays
 *********************************************************************/
 void SearchSort::loadArrays() {
+    // get and copy first file data into array
     ifstream infile_original;
     infile_original.open("original.txt");
     if (infile_original.fail()) {
@@ -61,6 +62,7 @@ void SearchSort::loadArrays() {
     // reset index
     index = 0;
 
+    // get and copy second file data into array
     ifstream infile_early;
     infile_early.open("early.txt");
     if (infile_early.fail()) {
@@ -76,12 +78,26 @@ void SearchSort::loadArrays() {
     }
     cout << endl;
 
+    // get and copy third file data into array
     ifstream infile_middle;
     infile_middle.open("middle.txt");
     if (infile_middle.fail()) {
         cout << "WARNING! Cannot find file \"middle.txt\"\n\n";
     }
+    while (!infile_middle.eof()) {
+        infile_middle >> val;
+        thirdArray[index] = val;
+        index++;
+    }
+    for (int i = 0; i < 10; i++) {
+        cout << thirdArray[i] << " ";
+    }
+    cout << endl;
 
+    // reset index
+    index = 0;
+
+    
 }
 
 /*********************************************************************
