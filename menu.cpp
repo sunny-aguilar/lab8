@@ -20,7 +20,7 @@ void Menu::mainMenu() {
 **                  into the arrays
 *********************************************************************/
 void Menu::menuCreateArrays() {
-    cout << "\n Stand By - Transferring data into arrays\n";
+    cout << "\n Stand By, transferring data into arrays. . . Done\n";
     cout << "+--------------------------------------------------+\n";
 }
 
