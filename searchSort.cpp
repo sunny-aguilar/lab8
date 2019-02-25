@@ -23,9 +23,13 @@ SearchSort::~SearchSort() {}
 ** Description:     starts the program
 *********************************************************************/
 void SearchSort::startProgram() {
+    // load arrays with data from files
     menu.menuCreateArrays();
 
+    // display main menu
+    
 
+    // load arrays
 
 }
 

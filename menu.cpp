@@ -8,6 +8,13 @@
 *********************************************************************/
 #include "menu.hpp"
 
+void Menu::mainMenu() {
+    cout << "1. Simple Search\n";
+    cout << "2. Sorting\n";
+    cout << "3. Binary Search\n";
+    cout << ">> ";
+}
+
 /*********************************************************************
 ** Description:     alerts user that the data files are being copied
 **                  into the arrays
