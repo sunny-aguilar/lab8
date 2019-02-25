@@ -138,7 +138,9 @@ void SearchSort::sortOperations() {
 
 /*********************************************************************
 ** Description:     creates an output file that is used to store the
- *                  results of the sorted arrays.
+ *                  results of the sorted arrays. This functions calls
+ *                  other functions that do the sorting and writing of
+ *                  the data.
 *********************************************************************/
 void SearchSort::outputSortedFile(int arr[], int size) {
     // string to hold output file name
