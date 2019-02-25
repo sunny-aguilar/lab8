@@ -75,7 +75,7 @@ void SearchSort::selectAlgorithm() {
     switch (menu.validateNumber(1,4)) {
         case 1:
             getTargetValue();
-            simpleSearch(firstArray, 9);
+            simpleSearch(firstArray, 9, target);
             break;
         case 2:
             sorting();
@@ -100,10 +100,12 @@ void SearchSort::getTargetValue() {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     implements a search algorithm using linear search
+**                  which is useful when the list of numbers are not
+**                  sorted.
 *********************************************************************/
-void SearchSort::simpleSearch(int arr[], int val) {
-
+void SearchSort::simpleSearch(int arr[], int size, int val) {
+    bool found false;
 
     // binary search algorithm
 
