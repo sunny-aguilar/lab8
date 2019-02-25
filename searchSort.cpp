@@ -129,8 +129,10 @@ bool SearchSort::simpleSearch(int arr[], int size, int val) {
 ** Description:     desc
 *********************************************************************/
 void SearchSort::sorting() {
+    // string to hold output file name
     string outFileName;
 
+    // create output file object
     ofstream outFile;
 
     // request output file name;
@@ -140,6 +142,9 @@ void SearchSort::sorting() {
 
     // create outfile and write
     outFile.open(outFileName);
+
+
+
 }
 
 /*********************************************************************
