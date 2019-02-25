@@ -23,6 +23,9 @@ public:
     void loadArrays();
     void openFile(string fileName, int arr[], int size);
     void selectAlgorithm();
+    void simpleSearch();
+    void sorting();
+    void binarySearch();
 
 private:
     Menu menu;

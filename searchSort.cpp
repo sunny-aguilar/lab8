@@ -74,13 +74,13 @@ void SearchSort::selectAlgorithm() {
     menu.mainMenu();
     switch (menu.validateNumber(1,4)) {
         case 1:
-
+            simpleSearch();
             break;
         case 2:
-
+            sorting();
             break;
         case 3:
-
+            binarySearch();
             break;
         case 4:
             menu.menuExit();
@@ -88,4 +88,29 @@ void SearchSort::selectAlgorithm() {
         default:
             cout << "Unable to determine selection\n";
     }
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void SearchSort::simpleSearch() {
+    menu.menuSearchValue();
+    int val = menu.validateNumber(0,50);
+    cout << "Value entered is " << val << endl;
+    // binary search algorithm
+
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void SearchSort::sorting() {
+
+}
+
+/*********************************************************************
+** Description:     desc
+*********************************************************************/
+void SearchSort::binarySearch() {
+
 }
