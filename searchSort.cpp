@@ -77,7 +77,7 @@ void SearchSort::selectAlgorithm() {
             searchArrays();
             break;
         case 2:
-            sorting();
+            sortOperations();
             break;
         case 3:
             binarySearch();
@@ -128,41 +128,33 @@ bool SearchSort::simpleSearch(int arr[], int size, int val) {
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
-void SearchSort::sorting() {
-
-    for (int i = 0; i < 4; i++) {
-        // string to hold output file name
-        string outFileName;
-
-        // create output file object
-        ofstream outFile;
-
-        // request output file name;
-        cout << "Enter a file name to save the data to (i.e., outfile_one.txt):\n";
-        cout << ">> ";
-        cin >> outFileName;
-
-        // create outfile and write
-        outFile.open(outFileName);
-
-        if (i == 0) {
-            bubbleSort(firstArray, 9);
-            insertFile(outFile, firstArray, 9);
-        }
-        else if (i == 1) {
-            bubbleSort(secondArray, 10);
-            insertFile(outFile, secondArray, 10);
-        }
-        else if (i == 2) {
-            bubbleSort(thirdArray, 10);
-            insertFile(outFile, thirdArray, 10);
-        }
-        else if (i == 3) {
-            bubbleSort(fourthArray, 10);
-            insertFile(outFile, fourthArray, 10);
-        }
-    }
+void SearchSort::sortOperations() {
+    outputSortedFile(firstArray, 9);
+    outputSortedFile(secondArray, 10);
+    outputSortedFile(thirdArray, 10);
+    outputSortedFile(fourthArray, 10);
 }
+
+void SearchSort::outputSortedFile(int arr[], int size) {
+    // string to hold output file name
+    string outFileName;
+
+    // create output file object
+    ofstream outFile;
+
+    // request output file name;
+    cout << "Enter a file name to save the data to (i.e., outfile_one.txt):\n";
+    cout << ">> ";
+    cin >> outFileName;
+
+    // create outfile and write
+    outFile.open(outFileName);
+
+    bubbleSort(arr, size);
+    insertFile(outFile, arr, size);
+}
+
+
 
 /*********************************************************************
 ** Description:     desc
