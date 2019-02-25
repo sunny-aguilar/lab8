@@ -134,14 +134,26 @@ void SearchSort::sorting() {
 
     // create output file object
     ofstream outFile;
+    for (int i = 0; i < 4; i++) {
+        // request output file name;
+        cout << "Enter a file name to save the data to (i.e., outfile_one.txt):\n";
+        cout << ">> ";
+        cin >> outFileName;
 
-    // request output file name;
-    cout << "Enter a file name to save the data to (i.e., outfile_one.txt):\n";
-    cout << ">> ";
-    cin >> outFileName;
+        // create outfile and write
+        outFile.open(outFileName);
+        bubbleSort(firstArray, 9);
+        for (int index = 0; index < 9; index++) {
+            cout << firstArray[index] << " ";
+        }
 
-    // create outfile and write
-    outFile.open(outFileName);
+        int max = 9;
+        if (i <= 1) { max = 10; }
+
+        for (int index = 0; index < 9; index++) {
+            outFile << firstArray[index] << " ";
+        }
+    }
 
 }
 
