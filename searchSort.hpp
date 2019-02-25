@@ -24,7 +24,7 @@ public:
     void openFile(string fileName, int arr[], int size);
     void selectAlgorithm();
     void getTargetValue();
-    void simpleSearch(int arr[], int size, int val);
+    int simpleSearch(int arr[], int size, int val);
     void sorting();
     void binarySearch();
 

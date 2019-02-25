@@ -75,7 +75,7 @@ void SearchSort::selectAlgorithm() {
     switch (menu.validateNumber(1,4)) {
         case 1:
             getTargetValue();
-            simpleSearch(firstArray, 9, target);
+            int value = simpleSearch(firstArray, 9, target);
             break;
         case 2:
             sorting();
@@ -104,11 +104,18 @@ void SearchSort::getTargetValue() {
 **                  which is useful when the list of numbers are not
 **                  sorted.
 *********************************************************************/
-void SearchSort::simpleSearch(int arr[], int size, int val) {
-    bool found false;
-
-    // binary search algorithm
-
+int SearchSort::simpleSearch(int arr[], int size, int val) {
+    bool found = false;
+    int position = -1;
+    int index = 0;
+    while (index < size && found == false) {
+        if (arr[index] == val) {
+            found = true;
+            position = index;
+        }
+        index++;
+    }
+    return position;
 }
 
 /*********************************************************************
