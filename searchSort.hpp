@@ -12,6 +12,8 @@
 
 class SearchSort {
 public:
+    SearchSort();
+    ~SearchSort();
     void startProgram();
 
 private:
