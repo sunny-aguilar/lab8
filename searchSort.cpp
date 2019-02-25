@@ -203,7 +203,15 @@ void SearchSort::bubbleSort(int arr[], int size) {
 }
 
 /*********************************************************************
-** Description:     desc
+** Description:     starts the program
+*********************************************************************/
+void SearchSort::binarySearchOps() {
+    
+}
+
+/*********************************************************************
+** Description:     this function implements the binary search
+**                  algorithm to search each array.
 *********************************************************************/
 void SearchSort::binarySearch() {
 
