@@ -9,7 +9,9 @@
 #define SEARCHSORT_HPP
 
 #include "menu.hpp"
+#include <string>
 #include <fstream>
+using std::string;
 using std::ifstream;
 using std::ofstream;
 
@@ -19,6 +21,7 @@ public:
     ~SearchSort();
     void startProgram();
     void loadArrays();
+    void openFile(string fileName);
     void selectAlgorithm();
 
 private:

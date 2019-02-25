@@ -78,6 +78,9 @@ void SearchSort::loadArrays() {
     }
     cout << endl;
 
+    // reset index
+    index = 0;
+
     // get and copy third file data into array
     ifstream infile_middle;
     infile_middle.open("middle.txt");
@@ -97,10 +100,11 @@ void SearchSort::loadArrays() {
     // reset index
     index = 0;
 
+    // get and copy fourth file data into array
     ifstream infile_end;
     infile_end.open("end.txt");
     if (infile_end.fail()) {
-        cout << "WARNING! Cannot find file \"middle.txt\"\n\n";
+        cout << "WARNING! Cannot find file \"end.txt\"\n\n";
     }
     while (!infile_end.eof()) {
         infile_end >> val;
@@ -112,6 +116,17 @@ void SearchSort::loadArrays() {
     }
     cout << endl;
 
+}
+
+/*********************************************************************
+** Description:     opens the file based on the parameters it receives
+**                  and copies data into the arrays
+*********************************************************************/
+void SearchSort::openFile(string fileName) {
+    int val;
+    int index = 0;
+
+    
 }
 
 /*********************************************************************
