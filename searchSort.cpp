@@ -29,7 +29,6 @@ void SearchSort::startProgram() {
 
     // main menu and select algorithm
     selectAlgorithm();
-
 }
 
 
