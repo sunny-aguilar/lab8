@@ -25,8 +25,6 @@ SearchSort::~SearchSort() {}
 void SearchSort::startProgram() {
     // load arrays with data from files
     menu.menuCreateArrays();
-
-    // load arrays
     loadArrays();
 
     // main menu and select algorithm
