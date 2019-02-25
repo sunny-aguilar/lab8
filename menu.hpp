@@ -29,7 +29,6 @@ public:
     void menuSearchResults(bool arr1, bool arr2, bool arr3, bool arr4);
     void menuExit();
     int validateNumber(int min, int max);
-    int validateInteger(int min, int max);
 
 private:
 
