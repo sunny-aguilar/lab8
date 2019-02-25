@@ -171,11 +171,6 @@ void SearchSort::insertFile(ofstream &file, int arr[], int size) {
     for (int index = 0; index < size; index++) {
         file << arr[index] << " ";
     }
-
-    for (int index = 0; index < size; index++) {
-        cout << arr[index] << " ";
-    }
-    cout << endl;
 }
 
 /*********************************************************************

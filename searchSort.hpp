@@ -26,6 +26,7 @@ public:
     void searchArrays();
     bool simpleSearch(int arr[], int size, int val);
     void sorting();
+    void sortFile(ofstream &file, int arr[], int size);
     void insertFile(ofstream &file, int arr[], int size);
     void bubbleSort(int arr[], int size);
     void binarySearch();
