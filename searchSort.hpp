@@ -23,8 +23,8 @@ public:
     void loadArrays();
     void openFile(string fileName, int arr[], int size);
     void selectAlgorithm();
-    void getTargetValue();
-    int simpleSearch(int arr[], int size, int val);
+    void searchArrays();
+    bool simpleSearch(int arr[], int size, int val);
     void sorting();
     void binarySearch();
 

@@ -36,6 +36,26 @@ void Menu::menuSearchValue() {
 }
 
 /*********************************************************************
+** Description:     prompts user to enter a value to search
+*********************************************************************/
+void Menu::menuSearchResults(bool arr1, bool arr2, bool arr3, bool arr4) {
+    cout << "\n Linear Search Results\n";
+    cout << "+--------------------------------------------------+\n";
+    cout << "First Array: ";
+    if (arr1) { cout << "Value found\n"; }
+    else { cout << "Value not found\n"; }
+    cout << "Second Array: ";
+    if (arr2) { cout << "Value found\n"; }
+    else { cout << "Value not found\n"; }
+    cout << "Third Array: ";
+    if (arr3) { cout << "Value found\n"; }
+    else { cout << "Value not found\n"; }
+    cout << "Fourth Array: ";
+    if (arr4) { cout << "Value found\n"; }
+    else { cout << "Value not found\n"; }
+}
+
+/*********************************************************************
 ** Description:     alerts user that the program is being exited
 *********************************************************************/
 void Menu::menuExit() {

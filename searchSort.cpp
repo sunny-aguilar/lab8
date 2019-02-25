@@ -74,7 +74,7 @@ void SearchSort::selectAlgorithm() {
     menu.mainMenu();
     switch (menu.validateNumber(1,4)) {
         case 1:
-            getTargetValue();
+            searchArrays();
             int value = simpleSearch(firstArray, 9, target);
             break;
         case 2:
@@ -94,9 +94,19 @@ void SearchSort::selectAlgorithm() {
 /*********************************************************************
 ** Description:     desc
 *********************************************************************/
-void SearchSort::getTargetValue() {
+void SearchSort::searchArrays() {
+    // prompt user for search value
     menu.menuSearchValue();
     int val = menu.validateNumber(0,50);
+
+    // search for value in each array and return if found
+    bool firstResult = simpleSearch(firstArray, 9, val);
+    bool secondResult = simpleSearch(secondArray, 10, val);
+    bool thirdResult = simpleSearch(thirdArray, 10, val);
+    bool fourthResult = simpleSearch(fourthArray, 10, val);
+
+    // send results to menu class for display
+    menu.menuSearchResults(firstResult, secondResult, thirdResult, fourthResult);
 }
 
 /*********************************************************************
@@ -104,18 +114,16 @@ void SearchSort::getTargetValue() {
 **                  which is useful when the list of numbers are not
 **                  sorted.
 *********************************************************************/
-int SearchSort::simpleSearch(int arr[], int size, int val) {
+bool SearchSort::simpleSearch(int arr[], int size, int val) {
     bool found = false;
-    int position = -1;
     int index = 0;
     while (index < size && found == false) {
         if (arr[index] == val) {
             found = true;
-            position = index;
         }
         index++;
     }
-    return position;
+    return found;
 }
 
 /*********************************************************************
