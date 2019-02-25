@@ -13,6 +13,7 @@ void Menu::mainMenu() {
     cout << "1. Simple Search\n";
     cout << "2. Sorting\n";
     cout << "3. Binary Search\n";
+    cout << "4. Exit\n";
     cout << ">> ";
 }
 
