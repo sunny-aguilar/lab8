@@ -40,6 +40,13 @@ void SearchSort::startProgram() {
 **                  data into the arrays
 *********************************************************************/
 void SearchSort::loadArrays() {
+    string fileName;
+    ifstream infile_original;
+
+    infile_original.open("original.txt");
+    if (infile_original.fail()) {
+        cout << "Cannot find \"original.txt\"";
+    }
 
 }
 
@@ -52,10 +59,13 @@ void SearchSort::selectAlgorithm() {
     menu.mainMenu();
     switch (menu.validateNumber(1,4)) {
         case 1:
+
             break;
         case 2:
+
             break;
         case 3:
+
             break;
         case 4:
             menu.menuExit();
