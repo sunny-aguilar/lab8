@@ -5,9 +5,7 @@
 **                  implement the search, sorting, and binary search
 **                  algorithms.
 *********************************************************************/
-#ifndef SEARCHSORT_HPP
-#define SEARCHSORT_HPP
+#include "searchSort.hpp"
 
+#include <iostream>
 
-
-#endif //LAB8_SEARCHSORT_HPP

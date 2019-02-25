@@ -5,9 +5,10 @@
 **                  implement the search, sorting, and binary search
 **                  algorithms.
 *********************************************************************/
-#include "searchSort.hpp"
+#ifndef SEARCHSORT_HPP
+#define SEARCHSORT_HPP
 
-#include <iostream>
+#include "menu.hpp"
 
 class SearchSort {
 public:
@@ -15,3 +16,5 @@ public:
 private:
 
 };
+
+#endif //LAB8_SEARCHSORT_HPP

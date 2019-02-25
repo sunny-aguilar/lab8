@@ -9,4 +9,26 @@
 #ifndef LAB8_MENU_HPP
 #define LAB8_MENU_HPP
 
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <sstream>
+#include <iomanip>
+using std::string;
+using std::setw;
+using std::left;
+using std::cin;
+using std::cout;
+using std::endl;
+
+class Menu {
+public:
+    void mainMenu();
+    int validateNumber(int min, int max);
+
+
+private:
+
+};
+
 #endif //LAB8_MENU_HPP
