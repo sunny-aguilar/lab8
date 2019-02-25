@@ -42,17 +42,17 @@ void Menu::menuSearchResults(bool arr1, bool arr2, bool arr3, bool arr4) {
     cout << "\n Linear Search Results\n";
     cout << "+--------------------------------------------------+\n";
     cout << "num.txt: ";
-    if (arr1) { cout << "target value found\n"; }
-    else { cout << "target value not found\n"; }
+    if (arr1) { cout << setw(26) << "target value found\n"; }
+    else { cout << setw(30) << "target value not found\n"; }
     cout << "Second Array: ";
-    if (arr2) { cout << "target value found\n"; }
-    else { cout << "target value not found\n"; }
+    if (arr2) { cout << setw(21) << "target value found\n"; }
+    else { cout << setw(25) << "target value not found\n"; }
     cout << "Third Array: ";
-    if (arr3) { cout << "target value found\n"; }
-    else { cout << "target value not found\n"; }
+    if (arr3) { cout << setw(22) << "target value found\n"; }
+    else { cout << setw(26) << "target value not found\n"; }
     cout << "Fourth Array: ";
-    if (arr4) { cout << "target value found\n"; }
-    else { cout << "target value not found\n"; }
+    if (arr4) { cout << setw(21) << "target value found\n"; }
+    else { cout << setw(25) << "target value not found\n"; }
 }
 
 /*********************************************************************
