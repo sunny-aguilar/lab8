@@ -38,7 +38,7 @@ void SearchSort::startProgram() {
 **                  arrays.
 *********************************************************************/
 void SearchSort::loadArrays() {
-    openFile("original.txt", firstArray, 9);
+    openFile("num.txt", firstArray, 9);
     openFile("early.txt", secondArray, 10);
     openFile("middle.txt", thirdArray, 10);
     openFile("end.txt", fourthArray, 10);
