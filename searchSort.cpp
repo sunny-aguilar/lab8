@@ -144,7 +144,13 @@ void SearchSort::bubbleSort(int arr[], int size) {
     int temp;
     bool swapMade;
     do {
-
+        for (int count = 0; count < (size - 1); count++) {
+            if (arr[count] > arr[count + 1]) {
+                temp = arr[count + 1];
+                arr[count + 1] = temp;
+                swapMade = true;
+            }
+        }
     } while ();
 }
 
