@@ -19,6 +19,7 @@ public:
     ~SearchSort();
     void startProgram();
     void loadArrays();
+    void selectAlgorithm();
 
 private:
     Menu menu;

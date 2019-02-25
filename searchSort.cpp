@@ -26,10 +26,11 @@ void SearchSort::startProgram() {
     // load arrays with data from files
     menu.menuCreateArrays();
 
+    // load arrays
+
     // display main menu
     menu.mainMenu();
 
-    // load arrays
 
 }
 
@@ -40,4 +41,23 @@ void SearchSort::startProgram() {
 *********************************************************************/
 void SearchSort::loadArrays() {
 
+}
+
+/*********************************************************************
+** Description:     this functions gets the text files and adds the
+**                  data into the arrays
+*********************************************************************/
+void SearchSort::selectAlgorithm() {
+    switch (menu.validateNumber(1,4)) {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        default:
+            cout << "Unable to determine selection\n";
+    }
 }
