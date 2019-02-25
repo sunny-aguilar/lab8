@@ -215,6 +215,9 @@ void SearchSort::binarySearchOps() {
     bool secondResult = binarySearch(secondArray, 10, val);
     bool thirdResult = binarySearch(thirdArray, 10, val);
     bool fourthResult = binarySearch(fourthArray, 10, val);
+
+    // send results to menu class for display
+    menu.menuSearchResults(firstResult, secondResult, thirdResult, fourthResult);
 }
 
 /*********************************************************************
