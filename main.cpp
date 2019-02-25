@@ -1,3 +1,5 @@
+#include "searchSort.hpp"
+
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            Feb 26, 2019
@@ -12,10 +14,10 @@
 **                  for a target value in the sorted data files from
 **                  the sorting algorithm.
 *********************************************************************/
-
+#include "searchSort.hpp"
 
 int main() {
-
-
+    SearchSort algo;
+    algo.startProgram();
     return 0;
 }

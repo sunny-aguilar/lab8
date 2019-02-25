@@ -12,7 +12,7 @@
 
 class SearchSort {
 public:
-
+    void startProgram();
 private:
 
 };
