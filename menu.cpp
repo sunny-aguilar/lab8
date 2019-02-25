@@ -9,6 +9,7 @@
 #include "menu.hpp"
 
 void Menu::mainMenu() {
+    cout << "Select an operation:\n";
     cout << "1. Simple Search\n";
     cout << "2. Sorting\n";
     cout << "3. Binary Search\n";
