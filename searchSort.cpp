@@ -80,7 +80,7 @@ void SearchSort::selectAlgorithm() {
             sortOperations();
             break;
         case 3:
-            binarySearch();
+            binarySearchOps();
             break;
         case 4:
             menu.menuExit();
@@ -206,7 +206,15 @@ void SearchSort::bubbleSort(int arr[], int size) {
 ** Description:     starts the program
 *********************************************************************/
 void SearchSort::binarySearchOps() {
-    binarySearch(firstArray, 9, )
+    // prompt user for search value
+    menu.menuSearchValue();
+    int val = menu.validateNumber(0,50);
+
+    // search for value in each array and return if found
+    bool firstResult = binarySearch(firstArray, 9, val);
+    bool firstResult = binarySearch(secondArray, 10, val);
+    bool firstResult = binarySearch(thirdArray, 10, val);
+    bool firstResult = binarySearch(fourthArray, 10, val);
 }
 
 /*********************************************************************
