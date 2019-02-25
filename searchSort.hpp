@@ -11,7 +11,7 @@
 #include "menu.hpp"
 #include <fstream>
 using std::ifstream;
-using std
+using std::ofstream;
 
 class SearchSort {
 public:
