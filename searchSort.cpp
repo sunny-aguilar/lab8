@@ -27,7 +27,7 @@ void SearchSort::startProgram() {
     menu.menuCreateArrays();
 
     // display main menu
-    
+    menu.mainMenu();
 
     // load arrays
 
