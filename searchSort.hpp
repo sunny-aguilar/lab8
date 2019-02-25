@@ -22,10 +22,10 @@ public:
 
 private:
     Menu menu;
-    int firstArray[];
-    int secondArray[];
-    int thirdArray[];
-    int fourthArray[];
+    int firstArray[9];
+    int secondArray[10];
+    int thirdArray[10];
+    int fourthArray[10];
 };
 
 #endif //LAB8_SEARCHSORT_HPP
