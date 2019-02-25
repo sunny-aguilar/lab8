@@ -97,7 +97,21 @@ void SearchSort::loadArrays() {
     // reset index
     index = 0;
 
-    
+    ifstream infile_end;
+    infile_end.open("end.txt");
+    if (infile_end.fail()) {
+        cout << "WARNING! Cannot find file \"middle.txt\"\n\n";
+    }
+    while (!infile_end.eof()) {
+        infile_end >> val;
+        fourthArray[index] = val;
+        index++;
+    }
+    for (int i = 0; i < 10; i++) {
+        cout << thirdArray[i] << " ";
+    }
+    cout << endl;
+
 }
 
 /*********************************************************************
