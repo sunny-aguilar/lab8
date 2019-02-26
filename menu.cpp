@@ -9,12 +9,10 @@
 #include "menu.hpp"
 
 void Menu::mainMenu() {
-    cout << "Select an operation:\n";
-    cout << "1. Simple Search\n";
-    cout << "2. Sorting\n";
-    cout << "3. Binary Search\n";
-    cout << "4. Exit\n";
-    cout << ">> ";
+    cout << "Welcome, the following tasks will be performed\n";
+    cout << ">> Simple Search\n";
+    cout << ">> Sorting\n";
+    cout << ">> Binary Search\n";
 }
 
 /*********************************************************************
@@ -23,7 +21,7 @@ void Menu::mainMenu() {
 *********************************************************************/
 void Menu::menuCreateArrays() {
     cout << "\n Stand By, transferring data into arrays. . . Done\n";
-    cout << "+--------------------------------------------------+\n";
+    cout << "+--------------------------------------------------+\n\n";
 }
 
 /*********************************************************************
@@ -51,8 +49,8 @@ void Menu::menuSearchResults(bool arr1, bool arr2, bool arr3, bool arr4) {
     if (arr3) { cout << setw(22) << "target value found\n"; }
     else { cout << setw(26) << "target value not found\n"; }
     cout << "Fourth Array: ";
-    if (arr4) { cout << setw(21) << "target value found\n"; }
-    else { cout << setw(25) << "target value not found\n"; }
+    if (arr4) { cout << setw(21) << "target value found\n\n"; }
+    else { cout << setw(26) << "target value not found\n\n"; }
 }
 
 /*********************************************************************

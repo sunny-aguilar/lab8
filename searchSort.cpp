@@ -72,22 +72,22 @@ void SearchSort::openFile(string fileName, int arr[], int size) {
 void SearchSort::selectAlgorithm() {
     // display main menu
     menu.mainMenu();
-    switch (menu.validateNumber(1,4)) {
-        case 1:
+    //switch (menu.validateNumber(1,4)) {
+        //case 1:
             searchArrays();
-            break;
-        case 2:
+            //break;
+        //case 2:
             sortOperations();
-            break;
-        case 3:
+            //break;
+        //case 3:
             binarySearchOps();
-            break;
-        case 4:
+            //break;
+        //case 4:
             menu.menuExit();
-            break;
-        default:
-            cout << "Unable to determine selection\n";
-    }
+            //break;
+        //default:
+            //cout << "Unable to determine selection\n";
+    //}
 }
 
 /*********************************************************************
