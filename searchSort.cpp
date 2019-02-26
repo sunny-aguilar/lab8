@@ -72,22 +72,14 @@ void SearchSort::openFile(string fileName, int arr[], int size) {
 void SearchSort::selectAlgorithm() {
     // display main menu
     menu.mainMenu();
-    //switch (menu.validateNumber(1,4)) {
-        //case 1:
-            searchArrays();
-            //break;
-        //case 2:
-            sortOperations();
-            //break;
-        //case 3:
-            binarySearchOps();
-            //break;
-        //case 4:
-            menu.menuExit();
-            //break;
-        //default:
-            //cout << "Unable to determine selection\n";
-    //}
+
+    searchArrays();
+
+    sortOperations();
+
+    binarySearchOps();
+
+    menu.menuExit();
 }
 
 /*********************************************************************
@@ -207,6 +199,7 @@ void SearchSort::bubbleSort(int arr[], int size) {
 *********************************************************************/
 void SearchSort::binarySearchOps() {
     // prompt user for search value
+    cin.ignore();
     menu.menuSearchValue();
     int val = menu.validateNumber(0,50);
 
