@@ -247,20 +247,22 @@ bool SearchSort::searchFiles(int target) {
     // confirm input file opened
     cout << "Text file successfully opened\n";
 
+    // count elements in text file & reset read position
     int totalElements = 0;
     totalElements = countElements(inFile);
     inFile.clear();
     inFile.seekg(0, std::ios::beg);
 
+    // dynamically create an array to hold text values
     int *tempArray;
     tempArray = new int[totalElements];
 
+    // store text values in array
     int index = 0;
     while (!inFile.eof()) {
         inFile >> tempArray[index];
         index++;
     }
-    cout << endl;
 
     // search for value in each array and return if found
     bool found = binarySearch(tempArray, 9, target);
