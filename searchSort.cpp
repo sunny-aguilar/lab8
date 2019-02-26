@@ -180,11 +180,11 @@ void SearchSort::insertFile(ofstream &file, int arr[], int size) {
 
 /*********************************************************************
 ** Description:     the algorithm implemented for sorting is the
- *                  bubble sort method. This method compares two
- *                  values in the array and swaps the smallest one
- *                  to the left. It continues to do this until all
- *                  the values are sorted. This algorithm is similar
- *                  to the one in the textbook on page 613.
+**                  bubble sort method. This method compares two
+**                  values in the array and swaps the smallest one
+**                  to the left. It continues to do this until all
+**                  the values are sorted. This algorithm is similar
+**                  to the one in the textbook on page 613.
 *********************************************************************/
 void SearchSort::bubbleSort(int arr[], int size) {
     int temp;
@@ -233,16 +233,16 @@ bool SearchSort::searchFiles(int target) {
     ifstream inFile;
 
     // add a file name
-    cout << "Enter a file name (i.e. a.txt)\n";
+    cout << "Enter a file name (i.e. outfile_one.txt)\n";
 
     // loop - ask user for file name if incorrect
     do {
-        cin >> fileName;                        // a.txt
-        inFile.open(fileName);                  // input file data from a.txt
+        cin >> fileName;
+        inFile.open(fileName);
         if (inFile.fail())
             cout << "File not found! "
                  << "Enter a file name:\n";
-    } while (inFile.fail());                    // if file not found, repeat loop
+    } while (inFile.fail());
 
     // confirm input file opened
     cout << "Text file successfully opened\n";
