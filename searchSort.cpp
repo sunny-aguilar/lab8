@@ -210,6 +210,60 @@ void SearchSort::binarySearchOps() {
     menu.menuSearchValue();
     int val = menu.validateNumber(0,50);
 
+    bool firstResult = searchFiles(val);
+    bool secondResult = searchFiles(val);
+    bool thirdResult = searchFiles(val);
+    bool fourthResult = searchFiles(val);
+
+
+
+//    // open sorted files from task 3
+//    string fileName;
+//    ifstream inFile;
+//
+//    // add a file name
+//    cout << "Enter a file name (i.e. a.txt)\n";
+//
+//    // loop - ask user for file name if incorrect
+//    do {
+//        cin >> fileName;                        // a.txt
+//        inFile.open(fileName);                  // input file data from a.txt
+//        if (inFile.fail())
+//            cout << "File not found! "
+//                 << "Enter a file name:\n";
+//    } while (inFile.fail());                    // if file not found, repeat loop
+//
+//    // confirm input file opened
+//    cout << "Text file successfully opened\n";
+//
+//    int totalElements = 0;
+//    totalElements = countElements(inFile);
+//    inFile.clear();
+//    inFile.seekg(0, std::ios::beg);
+//
+//    int *tempArray;
+//    tempArray = new int[totalElements];
+//
+//    int index = 0;
+//    while (!inFile.eof()) {
+//        inFile >> tempArray[index];
+//        cout << tempArray[index] << " ";
+//        index++;
+//    }
+//    cout << endl;
+
+
+//    // search for value in each array and return if found
+//    bool firstResult = binarySearch(tempArray, 9, val);
+//    bool secondResult = binarySearch(secondArray, 10, val);
+//    bool thirdResult = binarySearch(thirdArray, 10, val);
+//    bool fourthResult = binarySearch(fourthArray, 10, val);
+
+    // send results to menu class for display
+    menu.menuSearchResults(firstResult, secondResult, thirdResult, fourthResult);
+}
+
+bool SearchSort::searchFiles(int target) {
     // open sorted files from task 3
     string fileName;
     ifstream inFile;
@@ -219,10 +273,10 @@ void SearchSort::binarySearchOps() {
 
     // loop - ask user for file name if incorrect
     do {
-        cin >> fileName;                        // building_list.txt
-        inFile.open(fileName);                  // input file data from building_list.txt
+        cin >> fileName;                        // a.txt
+        inFile.open(fileName);                  // input file data from a.txt
         if (inFile.fail())
-            cout << "File not found! "          // request file name if not found
+            cout << "File not found! "
                  << "Enter a file name:\n";
     } while (inFile.fail());                    // if file not found, repeat loop
 
@@ -231,6 +285,8 @@ void SearchSort::binarySearchOps() {
 
     int totalElements = 0;
     totalElements = countElements(inFile);
+    inFile.clear();
+    inFile.seekg(0, std::ios::beg);
 
     int *tempArray;
     tempArray = new int[totalElements];
@@ -238,20 +294,13 @@ void SearchSort::binarySearchOps() {
     int index = 0;
     while (!inFile.eof()) {
         inFile >> tempArray[index];
-        cout << tempArray[index] << " ";
         index++;
     }
     cout << endl;
 
-
     // search for value in each array and return if found
-    bool firstResult = binarySearch(firstArray, 9, val);
-    bool secondResult = binarySearch(secondArray, 10, val);
-    bool thirdResult = binarySearch(thirdArray, 10, val);
-    bool fourthResult = binarySearch(fourthArray, 10, val);
-
-    // send results to menu class for display
-    menu.menuSearchResults(firstResult, secondResult, thirdResult, fourthResult);
+    bool found = binarySearch(tempArray, 9, target);
+    return found;
 }
 
 /*********************************************************************
