@@ -39,7 +39,7 @@ void Menu::menuSearchValue() {
 ** Description:     prompts user to enter a value to search
 *********************************************************************/
 void Menu::menuSearchResults(bool arr1, bool arr2, bool arr3, bool arr4) {
-    cout << "\n Linear Search Results\n";
+    cout << "\n Search Results\n";
     cout << "+--------------------------------------------------+\n";
     cout << "num.txt: ";
     if (arr1) { cout << setw(26) << "target value found\n"; }

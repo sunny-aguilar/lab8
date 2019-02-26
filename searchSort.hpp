@@ -30,6 +30,7 @@ public:
     void insertFile(ofstream &file, int arr[], int size);
     void bubbleSort(int arr[], int size);
     void binarySearchOps();
+    int countElements(ifstream &file);
     bool binarySearch(int arr[], int size, int val);
 
 private:

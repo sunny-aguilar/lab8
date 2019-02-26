@@ -211,9 +211,8 @@ void SearchSort::binarySearchOps() {
     int val = menu.validateNumber(0,50);
 
     // open sorted files from task 3
-    int *tempAray;
-    int element;
-    int count = 0;
+    int *tempArray;
+    int totalElements = 0;
     int index = 0;
     string fileName;
     ifstream inFile;
@@ -233,20 +232,13 @@ void SearchSort::binarySearchOps() {
     // confirm input file opened
     cout << "Text file successfully opened\n";
 
-    // count elements in file
+    totalElements = countElements(inFile);
+
+    tempArray = new int[totalElements];
     while (!inFile.eof()) {
-        inFile >> element;
-        count++;
-        cout << "Counting\n";
-    }
-    cout << "Element count " << count << endl;
-    tempAray = new int[count];
-    while (!inFile.eof()) {
-        inFile >> tempAray[index];
+        inFile >> tempArray[index];
+        cout << tempArray[index] << " ";
         index++;
-    }
-    for (int i = 0; i < count; i++) {
-        cout << tempAray[i] << " ";
     }
     cout << endl;
 
@@ -259,6 +251,26 @@ void SearchSort::binarySearchOps() {
 
     // send results to menu class for display
     menu.menuSearchResults(firstResult, secondResult, thirdResult, fourthResult);
+}
+
+/*********************************************************************
+** Description:     counts the number of characters in the file and
+**                  returns the value
+*********************************************************************/
+int SearchSort::countElements(ifstream &file) {
+    string line;
+    int length = 0;
+    int count = 0;
+    while (!file.eof()) {
+        getline(file, line);
+        count = line.length();
+        for (int index = 0; index < length; index++) {
+            if (line.at(index) == ' ') {
+                count--;
+            }
+        }
+    }
+    return count;
 }
 
 /*********************************************************************
