@@ -174,7 +174,7 @@ void SearchSort::outputSortedFile(int arr[], int size) {
 *********************************************************************/
 void SearchSort::insertFile(ofstream &file, int arr[], int size) {
     for (int index = 0; index < size; index++) {
-        file << arr[index] << " ";
+        file << " " << arr[index];
     }
 }
 
@@ -211,9 +211,6 @@ void SearchSort::binarySearchOps() {
     int val = menu.validateNumber(0,50);
 
     // open sorted files from task 3
-    int *tempArray;
-    int totalElements = 0;
-    int index = 0;
     string fileName;
     ifstream inFile;
 
@@ -232,9 +229,13 @@ void SearchSort::binarySearchOps() {
     // confirm input file opened
     cout << "Text file successfully opened\n";
 
+    int totalElements = 0;
     totalElements = countElements(inFile);
 
+    int *tempArray;
     tempArray = new int[totalElements];
+
+    int index = 0;
     while (!inFile.eof()) {
         inFile >> tempArray[index];
         cout << tempArray[index] << " ";
