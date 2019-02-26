@@ -37,7 +37,7 @@ searchSort.o: searchSort.hpp
 
 # Clean-up operations
 clean:
-	rm Node *.o
+	rm Search *.o
 
 debug:
 	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./Search

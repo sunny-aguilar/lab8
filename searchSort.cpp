@@ -264,6 +264,10 @@ bool SearchSort::searchFiles(int target) {
 
     // search for value in each array and return if found
     bool found = binarySearch(tempArray, 9, target);
+
+    // free memory
+    delete [] tempArray;
+
     return found;
 }
 
