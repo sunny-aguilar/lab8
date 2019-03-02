@@ -75,8 +75,9 @@ void SearchSort::openFile(string fileName, int arr[], int size) {
 }
 
 /*********************************************************************
-** Description:     this functions gets the text files and adds the
-**                  data into the arrays
+** Description:     this calls the functions in a specified order
+**                  to accomplish the task of searching, sorting, and
+**                  searchign again.
 *********************************************************************/
 void SearchSort::selectAlgorithm() {
     // display main menu
