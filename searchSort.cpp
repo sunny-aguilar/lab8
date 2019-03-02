@@ -118,7 +118,8 @@ void SearchSort::searchArrays() {
 /*********************************************************************
 ** Description:     implements a search algorithm using linear search
 **                  which is useful when the list of numbers are not
-**                  sorted.
+**                  sorted. The function returns true or false when
+**                  searching is complete.
 *********************************************************************/
 bool SearchSort::simpleSearch(int arr[], int size, int val) {
     bool found = false;
