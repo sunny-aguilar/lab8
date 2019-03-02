@@ -242,7 +242,7 @@ bool SearchSort::searchFiles(int target) {
     ifstream inFile;
 
     // add a file name
-    cout << "Enter a file name (i.e. outfile_one.txt)\n";
+    cout << "Enter a file name to read from (i.e. outfile_one.txt)\n";
 
     // loop - ask user for file name if incorrect
     do {
