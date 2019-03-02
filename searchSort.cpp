@@ -82,11 +82,11 @@ void SearchSort::openFile(string fileName, int arr[], int size) {
 void SearchSort::selectAlgorithm() {
     // display main menu
     menu.mainMenu();
-    // call linear search
+    // call linear search function
     searchArrays();
     // call sort function
     sortOperations();
-
+    // call binary search function
     binarySearchOps();
 
     menu.menuExit();
