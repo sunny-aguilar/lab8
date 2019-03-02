@@ -136,7 +136,7 @@ bool SearchSort::simpleSearch(int arr[], int size, int val) {
 /*********************************************************************
 ** Description:     this function calls another function for each
 **                  array to be sorted. The function called by this
- *                  f
+ *                  function creates 
 *********************************************************************/
 void SearchSort::sortOperations() {
     outputSortedFile(firstArray, 9);
