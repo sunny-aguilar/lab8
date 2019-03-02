@@ -84,7 +84,7 @@ void SearchSort::selectAlgorithm() {
     menu.mainMenu();
     // call linear search
     searchArrays();
-
+    // call sort function
     sortOperations();
 
     binarySearchOps();
