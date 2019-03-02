@@ -6,7 +6,7 @@
 **                  the searchSort class and the menus are called
 **                  as needed from within the searchSort class.
 *********************************************************************/
-#ifndef LAB8_MENU_HPP
+#ifndef MENU_HPP
 #define LAB8_MENU_HPP
 
 #include <iostream>
