@@ -174,6 +174,7 @@ void SearchSort::outputSortedFile(int arr[], int size) {
     insertFile(outFile, arr, size);
 
     // close output file
+    outFile.close();
 }
 
 /*********************************************************************
