@@ -167,7 +167,7 @@ void SearchSort::outputSortedFile(int arr[], int size) {
     // create outfile and write
     outFile.open(outFileName);
 
-    // sort array
+    // sort array using bubblesort
     bubbleSort(arr, size);
 
     // insert sorted values into file
