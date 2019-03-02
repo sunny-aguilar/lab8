@@ -7,7 +7,7 @@
 **                  as needed from within the searchSort class.
 *********************************************************************/
 #ifndef MENU_HPP
-#define LAB8_MENU_HPP
+#define MENU_HPP
 
 #include <iostream>
 #include <string>
