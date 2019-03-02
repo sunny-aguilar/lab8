@@ -88,7 +88,7 @@ void SearchSort::selectAlgorithm() {
     sortOperations();
     // call binary search function
     binarySearchOps();
-
+    // display exit menu
     menu.menuExit();
 }
 
