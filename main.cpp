@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 26, 2019
+** Date:            March 1, 2019
 ** Description:     This program implements various searching and
 **                  sorting algorithms. Text files are used
 **                  to input data into arrays. A simple search

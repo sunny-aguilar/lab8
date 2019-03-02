@@ -1,9 +1,18 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 26, 2019
+** Date:            March 1, 2019
 ** Description:     This class holds all the algorithms used to
 **                  implement the search, sorting, and binary search
-**                  algorithms.
+**                  algorithms. Text files are used to retrieve
+**                  integer values which are stored in arrays and
+**                  searched for a user-entered value. After the
+**                  search is done, the arrays are sorted in
+**                  ascending order. Once the arrays are sorted, text
+**                  files are outputted with the sorted values.
+**                  Finally, the sorted values are read from the
+**                  text files back into the program and binary
+**                  search is implemented to search for a user
+**                  entered value.
 *********************************************************************/
 #ifndef SEARCHSORT_HPP
 #define SEARCHSORT_HPP
